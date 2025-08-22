@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,12 +13,17 @@ body {
 }
 
 .login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 300px;
 }
+
 
 .form-group {
     margin-bottom: 15px;

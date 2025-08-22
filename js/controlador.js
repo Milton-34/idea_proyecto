@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    abrirModalDeCargue();
+
     // Obtener el rol del localStorage
     let rol = localStorage.getItem("rol");
     let username = localStorage.getItem("username");
@@ -46,7 +48,9 @@ $(document).ready(function() {
         $('#panelNomina').show();
         $('#panelProductos').hide();
         $('#AjustesContenedor').hide();
-
     });
-    
+
+    setTimeout(() => {
+        cerrarModalDeCargue();
+    }, 300);
 });

@@ -3,12 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Productos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Productos</title>    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./LIBRERIAS/bootstrap-5.3.7/css/bootstrap.min.css">
+
+    <!-- SWeetAlert CSS -->
+    <link rel="stylesheet" href="./LIBRERIAS/sweetAlert2/css/sweetalert2.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css"> 
   </head>
   <body>
-      <!-- SIDEBAR -->
+    <!-- Modal de carga -->
+    <div class="modal fade loading-modal" id="loadingModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" aria-live="polite" aria-atomic="true">
+          <div class="modal-body">
+            <div class="d-flex flex-column align-items-center">
+              <div class="spinner-border loading-spinner" role="status" aria-hidden="true">
+                <span class="visually-hidden">Cargando...</span>
+              </div>
+              <div id="loadingModalMessage" class="loading-message">Cargando...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
     <aside id="sidebar" class="bg-white border-end position-fixed">
       <div class="p-3 d-flex align-items-center gap-2">
         <div class="logo rounded d-flex align-items-center justify-content-center">P</div>
@@ -219,9 +241,19 @@
       </div>
     </footer>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!--<script src="prueba.js"></script>-->
+    <!-- Jquery -->
+    <script src="./LIBRERIAS/jquery/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./LIBRERIAS/bootstrap-5.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="./LIBRERIAS/bootstrap-5.3.7/js/bootstrap.js"></script> -->
+
+    <!-- SweetAlert2 JS -->
+    <script src="./LIBRERIAS/sweetAlert2/js/sweetalert2.all.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/modelo.js"></script>
+    <script src="./js/vista.js"></script>
     <script src="./js/controlador.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
