@@ -46,7 +46,7 @@ body {
 }
 
 /* nav links look */
-#sidebar .nav-link {
+#sidebar .navItem {
   color: #0f1724;
   font-size: 14px;
   padding: 10px 12px;
@@ -54,12 +54,12 @@ body {
   text-decoration: none;
 }
 
-#sidebar .nav-link:hover {
+#sidebar .navItem:hover {
   background: rgba(11,83,163,0.06);
   text-decoration: none;
 }
 
-#sidebar .nav-link.active {
+#sidebar .navItem.active {
   background: linear-gradient(90deg,var(--accent), #1e90ff);
   color: #fff;
 }
